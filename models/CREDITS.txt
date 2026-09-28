@@ -1,0 +1,39 @@
+PORTFOLIO ASSET NOTES
+
+Source: archives supplied by the portfolio owner.
+No license, author, source URL or attribution document was present in any of
+these seven archives, including satellite.zip's nested source/Satellite.zip.
+The portfolio owner confirmed permission to publish these models and textures
+on this portfolio website. This is not a public-domain or redistribution grant.
+Creator names and original download-page attribution remain unverified.
+No models were uploaded to generative services; processing was local.
+
+FINAL VISUAL OVERRIDE:
+- 00 About Me: original Opus Core shader from the supplied Opus project.
+  The downloaded black-hole model was tried locally and rejected by the user.
+  Only that visual was restored. No planet/satellite/layout/camera rollback.
+  Rejected model derivatives stay under scripts/asset-source, not public/dist.
+
+Downloaded assets used here:
+- Graphic: Exotic+03+(4k).zip / Exotic 03 (Diffuse 4k).png.
+- Video: Exotic+02+(4k).zip / Exotic 02 (Diffuse 4k).png.
+- Art Direction: Oceanic+02.zip / Oceanic 02 (Diffuse).png.
+  Planet packs are TEXTURES, not meshes. Existing Three.js spheres use local
+  2048x1024 WebP derivatives. Original 4K/8K files remain untouched.
+- Contact: satellite.zip / source/Satellite.zip /
+  Satellite/SatelliteSubstancePainter.obj + textures/lambert1_albedo.jpeg.
+  OBJ refers to an absent MTL; material assigned locally from supplied atlas.
+  Converted to GLB with a 2048px atlas. No animation clips in either model.
+
+Inspected but not used:
+- gargantua-the-black-hole.zip: native Zstd-compressed Blender file only;
+  decoded header BLENDER-v304. No directly usable web model. Full local
+  Zstd stream decode failed; no Blender renderer installed. Not rendered.
+- Terran+09+(4k).zip: texture-only pack; diffuse inspected visually, similar
+  green/brown palette to selected Exotic 03.
+
+Full sizes, dimensions, archive SHA-256, CRC/path-safety checks, decoder
+limitations and selection notes: ../../asset-inventory.json in project root.
+Portfolio images/content belong to the existing Jirapon portfolio and are
+separate from these decorative space assets. Source author credits for the
+new assets remain UNKNOWN, pending original download-page information.
