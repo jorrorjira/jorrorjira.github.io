@@ -7,8 +7,8 @@
     <meta name="description" content="Jirapon — graphic designer, video editor and art director. Explore selected graphic design, video editing and art direction work." />
     <title>Jirapon — A Catalogue of Worlds</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='7' fill='%23ffd2a1'/%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23ffd2a1' stroke-opacity='.4'/%3E%3C/svg%3E" />
-    <script type="module" crossorigin src="./assets/index-CPKG1a41.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-cx1uuKOJ.css">
+    <script type="module" crossorigin src="./assets/index-5WPtMp1M.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-ZKfk8-JX.css">
   </head>
   <body>
     <canvas class="webgl" aria-hidden="true"></canvas>
@@ -98,8 +98,17 @@
 
     <!-- Guided route; actual canvas input, with an explicit escape hatch. -->
     <div class="guide-focus" data-guide-focus aria-hidden="true" hidden></div>
+    <svg class="guide-link" data-guide-link aria-hidden="true" hidden><path data-guide-line /><circle data-guide-dot r="2.5" /></svg>
     <aside class="guide" id="explore-guide" data-guide data-scroll-lock role="dialog" aria-modal="false" aria-labelledby="guide-title" aria-describedby="guide-body" hidden>
-      <div class="guide__meta mono"><span>Your first journey</span><span data-guide-count></span></div>
+      <div class="guide__meta">
+        <svg class="guide__avatar" viewBox="0 0 36 40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M7 36v-2c0-4 5-7 11-7s11 3 11 7v2M12 29v5h12v-5" />
+          <circle cx="18" cy="16" r="12" /><rect x="9" y="11" width="18" height="12" rx="5" />
+          <path d="M12 15h5M30 14h3v7h-3M6 14H3v7h3M18 4V1" />
+        </svg>
+        <div class="guide__sender"><span class="mono">Mission Control</span><span class="guide__signal">Incoming message</span></div>
+        <span class="mono" data-guide-count></span>
+      </div>
       <h2 class="serif" id="guide-title"></h2>
       <p id="guide-body"></p>
       <div class="guide__actions">
