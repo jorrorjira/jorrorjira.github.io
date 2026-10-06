@@ -7,8 +7,8 @@
     <meta name="description" content="Jirapon — graphic designer, video editor and art director. Explore selected graphic design, video editing and art direction work." />
     <title>Jirapon — A Catalogue of Worlds</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='7' fill='%23ffd2a1'/%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23ffd2a1' stroke-opacity='.4'/%3E%3C/svg%3E" />
-    <script type="module" crossorigin src="./assets/index-BG_H5ZYf.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DolGgPep.css">
+    <script type="module" crossorigin src="./assets/index-Chg1E2LM.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-1MybISsm.css">
   </head>
   <body>
     <canvas class="webgl" aria-hidden="true"></canvas>
@@ -128,10 +128,21 @@
     <!-- Static fallback when WebGL is unavailable -------------------------->
     <main class="fallback" data-fallback hidden>
       <p class="mono">Jirapon · Graphic designer</p>
-      <h1 class="serif">A catalogue of <em>five worlds</em></h1>
-      <p class="fallback__note">Your browser can't render the interactive galaxy, so here is the plain-text archive.</p>
+      <h1 class="serif">Selected work.<br /><em>A lighter view.</em></h1>
+      <p class="fallback__note" role="status"></p>
+      <div class="fallback__contact" data-lite-contact></div>
+      <details class="fallback__help">
+        <summary>Want the 3D galaxy?</summary>
+        <p>If available, enable graphics or hardware acceleration in your browser settings, then relaunch your browser. On a managed device, ask IT — or stay here to browse all work.</p>
+        <a href="?view=3d">Try 3D anyway ↗</a>
+      </details>
       <ol data-fallback-list></ol>
     </main>
+
+    <aside class="performance-notice" data-performance-notice data-scroll-lock hidden aria-label="3D performance">
+      <p role="status">3D is running slowly. Graphics acceleration may be off, or this device may be busy. You can browse the same work without 3D.</p>
+      <div><a href="?view=lite">View lightweight portfolio →</a><button type="button">Keep 3D</button></div>
+    </aside>
 
     <noscript>
       <p style="padding: 2rem; color: #ece6db; font-family: serif">This portfolio is an interactive WebGL experience and needs JavaScript.</p>
