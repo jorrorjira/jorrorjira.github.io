@@ -7,8 +7,8 @@
     <meta name="description" content="Jirapon — graphic designer, video editor and art director. Explore selected graphic design, video editing and art direction work." />
     <title>Jirapon — A Catalogue of Worlds</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='7' fill='%23ffd2a1'/%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23ffd2a1' stroke-opacity='.4'/%3E%3C/svg%3E" />
-    <script type="module" crossorigin src="./assets/index-Chg1E2LM.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-1MybISsm.css">
+    <script type="module" crossorigin src="./assets/index-ORTz5B6N.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BgrnVGoB.css">
   </head>
   <body>
     <canvas class="webgl" aria-hidden="true"></canvas>
@@ -125,18 +125,38 @@
 
     <div class="sr-only" aria-live="polite" data-announcer></div>
 
-    <!-- Static fallback when WebGL is unavailable -------------------------->
+    <!-- Lightweight portfolio: same work, a static galaxy ------------------>
     <main class="fallback" data-fallback hidden>
-      <p class="mono">Jirapon · Graphic designer</p>
-      <h1 class="serif">Selected work.<br /><em>A lighter view.</em></h1>
-      <p class="fallback__note" role="status"></p>
-      <div class="fallback__contact" data-lite-contact></div>
-      <details class="fallback__help">
-        <summary>Want the 3D galaxy?</summary>
-        <p>If available, enable graphics or hardware acceleration in your browser settings, then relaunch your browser. On a managed device, ask IT — or stay here to browse all work.</p>
-        <a href="?view=3d">Try 3D anyway ↗</a>
-      </details>
-      <ol data-fallback-list></ol>
+      <nav class="fallback__nav" aria-label="Portfolio navigation">
+        <a class="fallback__brand serif" href="#lite-top">Jirapon<span aria-hidden="true">✳</span></a>
+        <a class="mono" href="#lite-contact">Contact ↗</a>
+        <details class="fallback__help">
+          <summary class="mono">2D edition <span aria-hidden="true">＋</span></summary>
+          <div class="fallback__help-body">
+            <p class="fallback__note" role="status"></p>
+            <p>For the animated galaxy, enable graphics acceleration in your browser settings and relaunch. On a managed device, ask IT — or stay here to browse all work.</p>
+            <a href="?view=3d">Try the 3D galaxy ↗</a>
+          </div>
+        </details>
+      </nav>
+      <section class="fallback__hero" id="lite-top" aria-labelledby="lite-title">
+        <img class="fallback__scene" data-lite-scene width="1440" height="900" alt="" decoding="async" />
+        <div class="fallback__hero-copy">
+          <p class="mono">Graphic design · Video · Art direction</p>
+          <h1 class="serif" id="lite-title">Images.<br /><em>Motion.</em><br />Art direction.</h1>
+          <p>Graphic designer with a background<br />in film and art direction.</p>
+          <a class="fallback__explore mono" href="#lite-work">Explore selected work <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="fallback__scene-caption mono" aria-hidden="true">A catalogue of worlds / Still in orbit</p>
+      </section>
+      <section class="fallback__work" id="lite-work" aria-labelledby="lite-work-title">
+        <div class="fallback__section-head"><h2 class="serif" id="lite-work-title">Explore the work.</h2><span class="mono">01 — 03</span></div>
+        <ol data-fallback-list></ol>
+      </section>
+      <footer class="fallback__footer" id="lite-contact">
+        <div><p class="mono">04 / Contact</p><h2 class="serif">Let’s <em>talk.</em></h2></div>
+        <div class="fallback__contact" data-lite-contact></div>
+      </footer>
     </main>
 
     <aside class="performance-notice" data-performance-notice data-scroll-lock hidden aria-label="3D performance">
