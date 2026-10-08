@@ -7,8 +7,8 @@
     <meta name="description" content="Jirapon — graphic designer, video editor and art director. Explore selected graphic design, video editing and art direction work." />
     <title>Jirapon — A Catalogue of Worlds</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='7' fill='%23ffd2a1'/%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23ffd2a1' stroke-opacity='.4'/%3E%3C/svg%3E" />
-    <script type="module" crossorigin src="./assets/index-Du6xTlBJ.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-B3CnUVmq.css">
+    <script type="module" crossorigin src="./assets/index-BfIL6Ffl.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BYMGG8Y2.css">
   </head>
   <body>
     <canvas class="webgl" aria-hidden="true"></canvas>
@@ -37,6 +37,7 @@
             <span class="sound__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
             <span data-sound-label>Sound off</span>
           </button>
+          <a class="sound mono" href="?view=lite" data-mode-lite data-hud-in="down" aria-label="Switch to 2D portfolio">2D</a>
         </div>
       </header>
 
@@ -145,7 +146,16 @@
           <p class="mono">Graphic design · Video · Art direction</p>
           <h1 class="serif" id="lite-title">Images.<br /><em>Motion.</em><br />Art direction.</h1>
           <p>Graphic designer with a background<br />in film and art direction.</p>
-          <a class="fallback__explore mono" href="#lite-work">Explore selected work <span aria-hidden="true">↓</span></a>
+          <div class="view-options" role="group" aria-label="Choose how you explore">
+            <div>
+              <a class="view-options__link view-options__link--primary" data-mode="3d" href="?view=3d" aria-describedby="view-3d-description">Explore in 3D</a>
+              <p id="view-3d-description">The full galaxy experience. Runs best with hardware acceleration enabled.</p>
+            </div>
+            <div>
+              <a class="view-options__link" data-mode="lite" href="?view=lite#lite-work" aria-describedby="view-2d-description">Stick with 2D</a>
+              <p id="view-2d-description">The same work, without the 3D effects. Choose this if 3D feels slow.</p>
+            </div>
+          </div>
         </div>
         <p class="fallback__scene-caption mono" aria-hidden="true">A catalogue of worlds / Still in orbit</p>
       </section>
