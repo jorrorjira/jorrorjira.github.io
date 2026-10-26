@@ -7,9 +7,9 @@
     <meta name="description" content="Selected graphic design, video editing and art direction work by Jirapon, a graphic designer with a background in film." />
     <title>Jirapon | Design, video and art direction</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='7' fill='%23ffd2a1'/%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23ffd2a1' stroke-opacity='.4'/%3E%3C/svg%3E" />
-    <script type="module" crossorigin src="./assets/index--uqnkIYq.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/language-B_TekKwv.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-kXcFD8QT.css">
+    <script type="module" crossorigin src="./assets/index-DJtLFK_P.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/language-5ITOH3e_.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-LT3jHtV2.css">
   </head>
   <body>
     <dialog class="language-dialog" data-language-dialog data-scroll-lock aria-labelledby="language-title" aria-describedby="language-description">
@@ -168,14 +168,14 @@
     <!-- Lightweight portfolio: same work, a static galaxy ------------------>
     <main class="fallback" data-fallback hidden>
       <nav class="fallback__nav" aria-label="Portfolio navigation" data-i18n-label="nav.portfolio">
-        <a class="fallback__brand serif" href="#lite-top">Jirapon<span aria-hidden="true">✳</span></a>
+        <a class="fallback__brand serif" href="#lite-top">Jirapon<span class="brand-orbit" aria-hidden="true"></span></a>
         <a class="mono" href="#lite-contact"><span data-i18n="nav.contact">Contact</span> ↗</a>
         <details class="fallback__help">
           <summary class="mono"><span data-i18n="lite.switch">Switch view</span> <span aria-hidden="true">＋</span></summary>
           <div class="fallback__help-body">
             <p class="fallback__note" role="status"></p>
             <p data-capability-advice data-i18n="lite.advice">To use 3D, enable graphics acceleration in your browser settings and restart the browser. For a managed device, contact your IT team. All work is also available in 2D.</p>
-            <a href="?view=3d&amp;try3d=1">Explore in 3D ↗</a>
+            <a href="?view=3d&amp;try3d=1" data-retry-3d>Explore in 3D ↗</a>
             <figure class="fallback__preview">
               <figcaption id="preview-title" class="mono" data-i18n="lite.previewTitle">Preview the 3D view</figcaption>
               <p id="preview-description" data-i18n="lite.previewBody">Play a recording of the galaxy. It does not require live 3D rendering.</p>
@@ -204,6 +204,18 @@
         <div class="fallback__contact" data-lite-contact></div>
       </footer>
     </main>
+
+    <dialog class="recovery-dialog" data-3d-recovery data-scroll-lock aria-labelledby="recovery-title" aria-describedby="recovery-description recovery-advice">
+      <span class="recovery-dialog__mark" aria-hidden="true"></span>
+      <p class="mono recovery-dialog__eyebrow" data-i18n="recovery.eyebrow">3D view</p>
+      <h2 class="serif" id="recovery-title" data-i18n="recovery.title">You can still explore.</h2>
+      <p id="recovery-description"></p>
+      <p id="recovery-advice" data-i18n="recovery.advice">All work is available in 2D. You can try 3D anyway, but it may run slowly.</p>
+      <div class="recovery-dialog__actions">
+        <a href="?view=3d&amp;try3d=1" data-retry-3d data-i18n="lite.retry">Try 3D anyway ↗</a>
+        <button type="button" data-continue-2d data-i18n="recovery.stay">Continue in 2D</button>
+      </div>
+    </dialog>
 
     <aside class="performance-notice" data-performance-notice data-scroll-lock hidden aria-label="3D performance" data-i18n-label="performance.label">
       <p role="status" data-i18n="performance.body">3D is running slowly. Graphics acceleration may be off, or your device may be busy. Switch to 2D to view the same work.</p>
