@@ -1,16 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-language-pending>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#020203" />
-    <meta name="description" content="Jirapon — graphic designer, video editor and art director. Explore selected graphic design, video editing and art direction work." />
-    <title>Jirapon — A Catalogue of Worlds</title>
+    <meta name="description" content="Selected graphic design, video editing and art direction work by Jirapon, a graphic designer with a background in film." />
+    <title>Jirapon | Design, video and art direction</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='7' fill='%23ffd2a1'/%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23ffd2a1' stroke-opacity='.4'/%3E%3C/svg%3E" />
-    <script type="module" crossorigin src="./assets/index-nNCIecGK.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BILrKxh_.css">
+    <script type="module" crossorigin src="./assets/index--uqnkIYq.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/language-B_TekKwv.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-kXcFD8QT.css">
   </head>
   <body>
+    <dialog class="language-dialog" data-language-dialog data-scroll-lock aria-labelledby="language-title" aria-describedby="language-description">
+      <p class="language-dialog__brand serif">Jirapon<span aria-hidden="true">.</span></p>
+      <h1 id="language-title" lang="en">Choose your language</h1>
+      <p id="language-description" lang="th">เลือกภาษาในการชมผลงาน</p>
+      <div class="language-dialog__choices">
+        <button type="button" data-language-choice="en" lang="en"><strong>English</strong><span>View in English</span><span aria-hidden="true">↗</span></button>
+        <button type="button" data-language-choice="th" lang="th"><strong>ไทย</strong><span>ชมผลงานภาษาไทย</span><span aria-hidden="true">↗</span></button>
+      </div>
+      <button class="language-dialog__cancel" type="button" data-language-cancel hidden>Cancel</button>
+    </dialog>
+    <button class="language-switch mono" type="button" data-language-open aria-haspopup="dialog" aria-label="Change language" hidden>EN / TH</button>
     <main class="mode-entry" data-mode-entry aria-labelledby="mode-title" hidden>
       <div class="mode-entry__space" aria-hidden="true">
         <img class="mode-entry__scene" data-entry-scene width="1440" height="900" alt="" decoding="async" />
@@ -18,21 +30,21 @@
       </div>
       <header class="mode-entry__identity">
         <span class="serif">Jirapon<span aria-hidden="true">.</span></span>
-        <button class="mode-entry__motion mono" type="button" data-entry-motion aria-pressed="false">Pause motion</button>
+        <button class="mode-entry__motion mono" type="button" data-entry-motion data-i18n="motion.pause" aria-pressed="false">Pause motion</button>
       </header>
       <div class="mode-entry__body">
         <div class="mode-entry__accents" aria-hidden="true">
           <span class="entry-accent entry-accent--orbit"></span>
         </div>
-        <h1 class="serif" id="mode-title"><span class="mode-entry__initial">C</span>hoose how<br /><em>you <span class="mode-entry__initial">E</span>xplore.</em></h1>
-        <div class="view-options" role="group" aria-label="Choose how you explore">
+        <h1 class="serif" id="mode-title" data-i18n-html="entry.title"><span class="mode-entry__initial">C</span>hoose how<br /><em>you <span class="mode-entry__initial">E</span>xplore.</em></h1>
+        <div class="view-options" role="group" aria-label="Choose how to view the portfolio" data-i18n-label="entry.label">
           <div>
-            <a class="view-options__link view-options__link--primary" data-mode="3d" href="?view=3d" aria-describedby="view-3d-description"><span>Explore in 3D</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5" /></svg></a>
-            <p id="view-3d-description">The full galaxy experience. Runs best with hardware acceleration enabled.</p>
+            <a class="view-options__link view-options__link--primary" data-mode="3d" href="?view=3d" aria-describedby="view-3d-description"><span data-i18n="entry.3d">Explore in 3D</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5" /></svg></a>
+            <p id="view-3d-description" data-i18n="entry.3dDescription">Explore the work in an interactive galaxy. Hardware acceleration is recommended.</p>
           </div>
           <div>
-            <a class="view-options__link" data-mode="lite" href="?view=lite" aria-describedby="view-2d-description"><span>Stick with 2D</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5" /></svg></a>
-            <p id="view-2d-description">The same work, without the 3D effects. Choose this if 3D feels slow.</p>
+            <a class="view-options__link" data-mode="lite" href="?view=lite" aria-describedby="view-2d-description"><span data-i18n="entry.2d">View in 2D</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5" /></svg></a>
+            <p id="view-2d-description" data-i18n="entry.2dDescription">Browse the same work without 3D effects. Recommended if 3D runs slowly.</p>
           </div>
         </div>
       </div>
@@ -41,40 +53,40 @@
     <canvas class="webgl" aria-hidden="true"></canvas>
 
     <!-- Loading ------------------------------------------------------------>
-    <div class="loader" role="progressbar" aria-label="Loading the galaxy" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-      <p class="loader__eyebrow mono" data-loader-fade>Calibrating instruments</p>
+    <div class="loader" role="progressbar" aria-label="Loading the galaxy" data-i18n-label="load.label" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <p class="loader__eyebrow mono" data-loader-fade data-i18n="load.title">Preparing the portfolio</p>
       <div class="loader__count serif"><span data-count>000</span></div>
       <div class="loader__bar"><span data-bar></span></div>
-      <p class="loader__step mono" data-step data-loader-fade>Resolving typefaces</p>
-      <p class="loader__foot mono" data-loader-fade>Five destinations · Selected work</p>
+      <p class="loader__step mono" data-step data-loader-fade data-i18n="load.fonts">Loading fonts</p>
+      <p class="loader__foot mono" data-loader-fade data-i18n="load.footer">Five destinations · Selected work</p>
     </div>
 
     <!-- Interface chrome --------------------------------------------------->
     <div class="hud" data-hud>
       <header class="hud__top">
-        <button type="button" class="brand" data-home data-hud-in="down" aria-label="Jirapon — back to origin">
+        <button type="button" class="brand" data-home data-hud-in="down" aria-label="Jirapon: back to start" data-i18n-label="nav.home">
           <span class="brand__mark" aria-hidden="true"></span>
           <span class="brand__name serif">Jirapon</span>
-          <span class="brand__role mono">Graphic designer</span>
+          <span class="brand__role mono" data-i18n="owner.shortRole">Graphic designer</span>
         </button>
         <div class="hud__controls">
-          <button type="button" class="sound mono" data-guide-toggle data-hud-in="down" aria-controls="explore-guide" aria-expanded="false">Guide</button>
-          <button type="button" class="sound mono" data-motion data-hud-in="down" aria-pressed="false" aria-label="Pause ambient motion">Pause motion</button>
+          <button type="button" class="sound mono" data-guide-toggle data-hud-in="down" data-i18n="guide.toggle" aria-controls="explore-guide" aria-expanded="false">Guide</button>
+          <button type="button" class="sound mono" data-motion data-hud-in="down" data-i18n="motion.pause" aria-pressed="false" aria-label="Pause ambient motion" data-i18n-label="motion.pauseLabel">Pause motion</button>
           <button type="button" class="sound mono" data-sound data-hud-in="down" aria-pressed="false">
             <span class="sound__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-            <span data-sound-label>Sound off</span>
+            <span data-sound-label data-i18n="sound.off">Sound off</span>
           </button>
-          <a class="sound mono" href="?view=lite" data-mode-lite data-hud-in="down" aria-label="Switch to 2D portfolio">2D</a>
+          <a class="sound mono" href="?view=lite" data-mode-lite data-hud-in="down" aria-label="Switch to the 2D portfolio" data-i18n-label="nav.2d">2D</a>
         </div>
       </header>
 
-      <nav class="rail" aria-label="Sections" data-hud-in="up">
+      <nav class="rail" aria-label="Portfolio sections" data-i18n-label="nav.sections" data-hud-in="up">
         <ol data-rail></ol>
         <span class="rail__track" aria-hidden="true"><span class="rail__fill" data-rail-fill></span></span>
       </nav>
 
       <footer class="hud__bottom">
-        <div class="secret mono" data-secret role="status" aria-live="polite">Secret (easter egg) <b data-secret-count>0/1</b></div>
+        <div class="secret mono" data-secret role="status" aria-live="polite"><span data-i18n="secret.label">Hidden interaction</span> <b data-secret-count>0/1</b></div>
         <div class="coords mono" aria-hidden="true" data-hud-in="up">
           <span>RA <b data-ra>00h 00m</b></span>
           <span>DEC <b data-dec>+00° 00′</b></span>
@@ -82,31 +94,30 @@
         </div>
         <div class="hint mono" data-hint data-hud-in="up">
           <span class="hint__line" aria-hidden="true"></span>
-          <span class="hint__text hint__text--wheel">Scroll to travel</span>
-          <span class="hint__text hint__text--touch">Swipe to travel</span>
+          <span class="hint__text hint__text--wheel" data-i18n="nav.scroll">Scroll to explore</span>
+          <span class="hint__text hint__text--touch" data-i18n="nav.swipe">Swipe to explore</span>
         </div>
       </footer>
     </div>
 
     <!-- Section copy ------------------------------------------------------->
     <section class="copy copy--intro" data-intro aria-labelledby="intro-title">
-      <p class="copy__eyebrow mono" data-fade>00 — About Me</p>
+      <p class="copy__eyebrow mono" data-fade data-i18n="intro.about">00 / About me</p>
       <h1 class="copy__title serif" id="intro-title">
         <span data-line><span><span data-owner-name>Jirapon</span></span></span>
-        <span data-line><span><em>Images. Motion.</em></span></span>
-        <span data-line><span>Art direction.</span></span>
+        <span data-line><span><em data-i18n="intro.design">Design. Video.</em></span></span>
+        <span data-line><span data-i18n="intro.art">Art direction.</span></span>
       </h1>
-      <p class="copy__body" data-fade>
-        Graphic designer with a background in film and art direction.
-        Explore a selection of my graphic design, video editing and art direction work.
+      <p class="copy__body" data-fade data-i18n="intro.body">
+        I am a graphic designer with a background in film and art direction. Here is a selection of my design and video work.
       </p>
     </section>
 
     <section class="copy copy--outro" data-outro aria-labelledby="outro-title">
-      <p class="copy__eyebrow mono" data-fade>04 — Contact</p>
+      <p class="copy__eyebrow mono" data-fade data-i18n="contact.section">04 / Contact</p>
       <h2 class="copy__title serif" id="outro-title">
-        <span data-line><span>Have a world</span></span>
-        <span data-line><span><em>worth building?</em></span></span>
+        <span data-line><span data-i18n="contact.line1">Discuss your</span></span>
+        <span data-line><span><em data-i18n="contact.line2">next project.</em></span></span>
       </h2>
       <a class="copy__mail serif" data-mail data-fade href="#">hello</a>
       <ul class="copy__links mono" data-links data-fade></ul>
@@ -119,7 +130,7 @@
     <!-- Project dossier ---------------------------------------------------->
     <aside class="panel" role="dialog" aria-labelledby="panel-title" data-panel data-scroll-lock hidden>
       <button type="button" class="panel__close mono" data-close>
-        <span>Return to orbit</span><kbd>Esc</kbd>
+        <span data-i18n="panel.return">Return to galaxy</span><kbd>Esc</kbd>
       </button>
       <div class="panel__body" data-panel-body></div>
     </aside>
@@ -134,15 +145,15 @@
           <circle cx="18" cy="16" r="12" /><rect x="9" y="11" width="18" height="12" rx="5" />
           <path d="M12 15h5M30 14h3v7h-3M6 14H3v7h3M18 4V1" />
         </svg>
-        <div class="guide__sender"><span class="mono">Mission Control</span><span class="guide__signal">Incoming message</span></div>
+        <div class="guide__sender"><span class="mono" data-i18n="guide.name">Mission Control</span><span class="guide__signal" data-i18n="guide.signal">Portfolio guide</span></div>
         <span class="mono" data-guide-count></span>
       </div>
       <svg class="guide__border" aria-hidden="true" focusable="false"><rect x="1" y="1" rx="5" pathLength="100" /></svg>
       <h2 class="serif" id="guide-title"></h2>
       <p id="guide-body"></p>
       <div class="guide__actions">
-        <button type="button" class="mono" data-guide-skip>Exit guide</button>
-        <button type="button" class="guide__next mono" data-guide-next><span>Next</span></button>
+        <button type="button" class="mono" data-guide-skip data-i18n="guide.exit">Exit guide</button>
+        <button type="button" class="guide__next mono" data-guide-next><span data-i18n="guide.next">Next</span></button>
       </div>
     </aside>
 
@@ -156,20 +167,20 @@
 
     <!-- Lightweight portfolio: same work, a static galaxy ------------------>
     <main class="fallback" data-fallback hidden>
-      <nav class="fallback__nav" aria-label="Portfolio navigation">
+      <nav class="fallback__nav" aria-label="Portfolio navigation" data-i18n-label="nav.portfolio">
         <a class="fallback__brand serif" href="#lite-top">Jirapon<span aria-hidden="true">✳</span></a>
-        <a class="mono" href="#lite-contact">Contact ↗</a>
+        <a class="mono" href="#lite-contact"><span data-i18n="nav.contact">Contact</span> ↗</a>
         <details class="fallback__help">
-          <summary class="mono">Switch view <span aria-hidden="true">＋</span></summary>
+          <summary class="mono"><span data-i18n="lite.switch">Switch view</span> <span aria-hidden="true">＋</span></summary>
           <div class="fallback__help-body">
             <p class="fallback__note" role="status"></p>
-            <p data-capability-advice>For the animated galaxy, enable graphics acceleration in your browser settings and relaunch. On a managed device, ask IT — or stay here to browse all work.</p>
+            <p data-capability-advice data-i18n="lite.advice">To use 3D, enable graphics acceleration in your browser settings and restart the browser. For a managed device, contact your IT team. All work is also available in 2D.</p>
             <a href="?view=3d&amp;try3d=1">Explore in 3D ↗</a>
             <figure class="fallback__preview">
-              <figcaption id="preview-title" class="mono">A look inside 3D</figcaption>
-              <p id="preview-description">A recorded tour of the galaxy. Press play — no live 3D needed.</p>
+              <figcaption id="preview-title" class="mono" data-i18n="lite.previewTitle">Preview the 3D view</figcaption>
+              <p id="preview-description" data-i18n="lite.previewBody">Play a recording of the galaxy. It does not require live 3D rendering.</p>
               <video data-3d-preview controls muted playsinline preload="none" width="1280" height="720" aria-labelledby="preview-title" aria-describedby="preview-description"></video>
-              <p data-preview-error role="status" hidden>The preview could not load. You can still browse all work below.</p>
+              <p data-preview-error role="status" hidden data-i18n="lite.previewError">The preview could not load. All work is still available below.</p>
             </figure>
           </div>
         </details>
@@ -177,30 +188,31 @@
       <section class="fallback__hero" id="lite-top" aria-labelledby="lite-title">
         <img class="fallback__scene" data-lite-scene width="1440" height="900" alt="" decoding="async" />
         <div class="fallback__hero-copy">
-          <p class="mono">Graphic design · Video · Art direction</p>
-          <h1 class="serif" id="lite-title">Images.<br /><em>Motion.</em><br />Art direction.</h1>
-          <p>Graphic designer with a background<br />in film and art direction.</p>
-          <a class="fallback__explore mono" href="#lite-work">Explore selected work <span aria-hidden="true">↓</span></a>
+          <p class="mono" data-i18n="lite.disciplines">Graphic design · Video editing · Art direction</p>
+          <h1 class="serif" id="lite-title" data-i18n-html="lite.title">Design.<br /><em>Video.</em><br />Art direction.</h1>
+          <p data-i18n="lite.bio">I am a graphic designer with a background in film and art direction.</p>
+          <a class="fallback__explore mono" href="#lite-work"><span data-i18n="lite.selected">View selected work</span> <span aria-hidden="true">↓</span></a>
         </div>
-        <p class="fallback__scene-caption mono" aria-hidden="true">A catalogue of worlds / Still in orbit</p>
+        <p class="fallback__scene-caption mono" aria-hidden="true" data-i18n="lite.caption">A catalogue of worlds / 2D view</p>
       </section>
       <section class="fallback__work" id="lite-work" aria-labelledby="lite-work-title">
-        <div class="fallback__section-head"><h2 class="serif" id="lite-work-title">Explore the work.</h2><span class="mono">01 — 03</span></div>
+        <div class="fallback__section-head"><h2 class="serif" id="lite-work-title" data-i18n="lite.workHeading">Selected work</h2><span class="mono">01 — 03</span></div>
         <ol data-fallback-list></ol>
       </section>
       <footer class="fallback__footer" id="lite-contact">
-        <div><p class="mono">04 / Contact</p><h2 class="serif">Let’s <em>talk.</em></h2></div>
+        <div><p class="mono" data-i18n="contact.section">04 / Contact</p><h2 class="serif" data-i18n-html="contact.heading">Get in <em>touch.</em></h2></div>
         <div class="fallback__contact" data-lite-contact></div>
       </footer>
     </main>
 
-    <aside class="performance-notice" data-performance-notice data-scroll-lock hidden aria-label="3D performance">
-      <p role="status">3D is running slowly. Graphics acceleration may be off, or this device may be busy. You can browse the same work without 3D.</p>
-      <div><a href="?view=lite">View lightweight portfolio →</a><button type="button">Keep 3D</button></div>
+    <aside class="performance-notice" data-performance-notice data-scroll-lock hidden aria-label="3D performance" data-i18n-label="performance.label">
+      <p role="status" data-i18n="performance.body">3D is running slowly. Graphics acceleration may be off, or your device may be busy. Switch to 2D to view the same work.</p>
+      <div><a href="?view=lite" data-i18n="performance.switch">View in 2D →</a><button type="button" data-i18n="performance.keep">Continue in 3D</button></div>
     </aside>
 
     <noscript>
-      <p style="padding: 2rem; color: #ece6db; font-family: serif">This portfolio is an interactive WebGL experience and needs JavaScript.</p>
+      <style>[data-language-pending] body>*{visibility:visible!important}.loader,.hud,.copy,.webgl{display:none}</style>
+      <p style="padding: 2rem; color: #ece6db; font-family: serif">Please enable JavaScript to view this portfolio.<br /><span lang="th">โปรดเปิด JavaScript เพื่อชมพอร์ตโฟลิโอ</span> · <a href="./media/JIRAPON.pdf">Résumé / เรซูเม่ ↗</a></p>
     </noscript>
 
   </body>
